@@ -5,7 +5,5 @@
     "part2": "😉"
   },
   "userMessagesUnread_one": "You have {{count}} unread message.",
-  "userMessagesUnread_other": "You have {{count}} unread messages.",
-  "oops": "Oops!",
-  "errorPageMessage": "Sorry, an unexpected error has occurred"
+  "userMessagesUnread_other": "You have {{count}} unread messages."
 }
