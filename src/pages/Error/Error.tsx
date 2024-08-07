@@ -1,10 +1,10 @@
-import { useRouteError } from "react-router-dom";
+// import { useRouteError } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
 export default function ErrorPage() {
     const { t } = useTranslation('layout');
 
-    const error = useRouteError();
+    // const error = useRouteError();
 
     return (
         <div id="error-page">
