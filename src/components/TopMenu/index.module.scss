@@ -1,0 +1,21 @@
+@import '../../styles/mixines/breakpoints.scss';
+
+.topMenu {
+  display: none;
+
+  @include breakpoint-min(md) {
+    display: flex;
+  }
+
+  li {
+    margin-left: 4px;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 11px 20px;
+    display: block;
+    border-radius: 10px;
+  }
+}
+

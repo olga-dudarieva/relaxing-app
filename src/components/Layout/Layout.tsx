@@ -2,16 +2,24 @@ import React from 'react';
 import styles from './index.module.scss';
 import {Outlet} from "react-router-dom";
 import Header from "../Header";
+import {Trans, useTranslation} from "react-i18next";
 
 function Layout() {
-  return (
-    <div className={styles.Container}>
-        <div className="App-header">Layout</div>
-        <Header/>
-        jhgbjhghjbkjhkj
+    const { t } = useTranslation();
+    const count = 3;
 
-        <Outlet />
-    </div>
+  return (
+      <div className={styles.container}>
+          <Header/>
+          <p>{t('title', {name: 'John'})}</p>
+          <p>{t('description.part1')}</p>
+          <p>{t('description.part2')}</p>
+          <Trans i18nKey="userMessagesUnread" count={count}>
+              You have {{count}} unread message.
+          </Trans>
+
+          <Outlet/>
+      </div>
   );
 }
 

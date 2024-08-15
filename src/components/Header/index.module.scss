@@ -1,0 +1,18 @@
+@import '../../styles/mixines/breakpoints.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  @include breakpoint-min(md) {
+    padding: 14px 90px 100px 90px;
+  }
+ }
+
+
+.nav {
+  display: flex;
+  align-items: center;
+}

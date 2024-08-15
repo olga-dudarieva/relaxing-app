@@ -1,0 +1,23 @@
+.langMenu {
+  margin-left: 150px;
+
+  button {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: var(--white-secondary);
+
+    &:disabled {
+      border-color: var(--white-secondary);
+    }
+
+    &:not(:disabled) {
+      cursor: pointer;
+    }
+
+    +button {
+      margin-left: 10px;
+    }
+  }
+}

@@ -2,7 +2,9 @@ import {createBrowserRouter} from "react-router-dom";
 import Layout from "../components/Layout";
 import React from "react";
 import Home from "../pages/Home/Home";
-import ErrorPage from "../pages/Error/Error";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Movie from "../pages/Movie";
+import Music from "../pages/Music";
 
 const router = createBrowserRouter([
     {
@@ -15,8 +17,14 @@ const router = createBrowserRouter([
                 element: <Home/>
             },
             {
-                path: "/home",
-                element: <ErrorPage/>,
+                path: "/movie",
+                errorElement: <ErrorPage />,
+                element: <Movie/>,
+                index: true
+            },
+            {
+                path: "/music",
+                element: <Music/>,
                 index: true
             },
 
