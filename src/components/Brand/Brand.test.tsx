@@ -1,12 +1,20 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Layout from '../Layout';
+import Brand from './Brand';
 
-test('Layout renders', () => {
-    // ARRANGE
-    render(<Layout />);
+describe("Brand", () => {
+    test('Brand renders', () => {
+        render(<Brand />);
 
-    // ASSERT
-    const textElement = screen.getByText(/Layout/i)
-    expect(textElement).toBeInTheDocument();
-});
+        const textElement = screen.getByText(/CineMuse/i)
+        expect(textElement).toBeInTheDocument();
+    })
+    test('Logo renders', () => {
+        render(<Brand />);
+
+        const logoElement = screen.getByTestId('brand')
+        const {firstChild} = logoElement
+        expect(firstChild!.nodeName).toBe('svg')
+    })
+})
+

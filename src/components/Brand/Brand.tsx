@@ -4,7 +4,7 @@ import styles from './index.module.scss'
 
 const Brand = () => {
     return (
-        <div className={styles.brand}>
+        <div className={styles.brand} data-testid="brand">
             <Logo/>
             <div className={styles.brandName}>CineMuse</div>
         </div>

@@ -9,7 +9,7 @@ i18next
     .use(initReactI18next)
     .use(HttpApi)
     .init({
-    debug: true,
+    debug: false,
     ns: [
         'common',
         'layout'

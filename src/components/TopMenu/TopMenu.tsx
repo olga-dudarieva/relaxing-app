@@ -8,6 +8,7 @@ const TopMenu = () => {
             <li>
                 <NavLink
                     to="/movie"
+                    data-testid="movieLink"
                     className={({ isActive, isPending }) =>
                         isActive ? "active" : ""
                     }
@@ -16,6 +17,7 @@ const TopMenu = () => {
             <li>
                 <NavLink
                     to='/music'
+                    data-testid="musicLink"
                     className={({ isActive, isPending }) =>
                         isActive ? "active" : ""
                     }>
